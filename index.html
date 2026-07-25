@@ -3,273 +3,367 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E.H.G. Güvenlik Sistemleri | Profesyonel Çözümler</title>
+    <title>EHG Güvenlik Kamera Sistemleri | Gaziantep</title>
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#fef2f2',
+                            100: '#fee2e2',
+                            500: '#ef4444',
+                            600: '#dc2626',
+                            700: '#b91c1c',
+                            800: '#991b1b',
+                            900: '#7f1d1d',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
-        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .hero-gradient {
+            background: radial-gradient(circle at center, rgba(220, 38, 38, 0.15) 0%, rgba(10, 10, 10, 0.95) 70%), #0a0a0a;
+        }
+        .glass-card {
+            background: rgba(24, 24, 27, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
     </style>
 </head>
-<body class="bg-slate-950 text-slate-100 selection:bg-sky-500 selection:text-white">
-
-    <!-- Top Bar -->
-    <div class="bg-slate-900 border-b border-slate-800 text-xs py-2 text-slate-400">
-        <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
-            <div class="flex items-center space-x-6">
-                <span>📍 Şahinbey / Gaziantep</span>
-                <span class="hidden md:inline">✉️ ehgguvenliksistemleri@gmail.com</span>
-            </div>
-            <div class="flex items-center space-x-4">
-                <span>📞 0535 291 47 48</span>
-                <span class="bg-sky-500/10 text-sky-400 px-2 py-0.5 rounded-full font-medium">7/24 Teknik Destek</span>
-            </div>
-        </div>
-    </div>
+<body class="bg-zinc-950 text-zinc-100 font-sans antialiased selection:bg-brand-600 selection:text-white">
 
     <!-- Header / Navbar -->
-    <header class="bg-slate-900/80 backdrop-blur-md border-b border-slate-800 sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-            <div class="flex items-center space-x-2">
-                <div class="w-9 h-9 bg-sky-500 rounded-xl flex items-center justify-center font-black text-slate-950 text-xl shadow-lg shadow-sky-500/30">E</div>
-                <div class="text-xl font-extrabold tracking-wider text-white">E.H.G. <span class="text-sky-400">GÜVENLİK</span></div>
-            </div>
-            <nav class="hidden md:flex space-x-8 text-sm font-medium text-slate-300">
-                <a href="#anasayfa" class="hover:text-sky-400 transition">Ana Sayfa</a>
-                <a href="#projeler" class="hover:text-sky-400 transition">Projeler</a>
-                <a href="#alanlar" class="hover:text-sky-400 transition">Faaliyet Alanları</a>
-                <a href="#yonetim" class="hover:text-sky-400 transition">Yönetim</a>
-                <a href="#neden-biz" class="hover:text-sky-400 transition">Neden Biz?</a>
-                <a href="#iletisim" class="text-sky-400 font-semibold hover:underline">İletişim</a>
+    <header class="fixed top-0 left-0 right-0 z-50 bg-zinc-950/80 backdrop-blur-md border-b border-zinc-800/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-brand-700 to-brand-500 flex items-center justify-center text-white shadow-lg shadow-brand-600/30 group-hover:scale-105 transition-transform">
+                    <i class="fa-solid fa-shield-halved text-xl"></i>
+                </div>
+                <div>
+                    <span class="text-xl font-extrabold tracking-tight text-white block">EHG<span class="text-brand-500">GÜVENLİK</span></span>
+                    <span class="text-xs text-zinc-400 tracking-wider font-medium">KAMERA SİSTEMLERİ</span>
+                </div>
+            </a>
+
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-zinc-300">
+                <a href="#hizmetler" class="hover:text-brand-500 transition-colors">Hizmetler</a>
+                <a href="#cozumler" class="hover:text-brand-500 transition-colors">Çözümler</a>
+                <a href="#hakkimizda" class="hover:text-brand-500 transition-colors">Kurumsal</a>
+                <a href="#iletisim" class="hover:text-brand-500 transition-colors">İletişim</a>
             </nav>
-            <a href="#iletisim" class="hidden sm:inline-block bg-sky-500 hover:bg-sky-600 text-white font-medium px-5 py-2.5 rounded-xl transition shadow-md shadow-sky-500/20 text-sm">Teklif Al</a>
+
+            <div class="flex items-center gap-4">
+                <a href="tel:05352914748" class="hidden sm:inline-flex items-center gap-2.5 px-5 py-2.5 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-semibold text-sm shadow-lg shadow-brand-600/20 transition-all hover:scale-[1.02]">
+                    <i class="fa-solid fa-phone-volume text-xs"></i>
+                    <span>Hemen Ara</span>
+                </a>
+                <!-- Mobile Menu Button -->
+                <button id="menuBtn" class="md:hidden p-2.5 rounded-xl bg-zinc-900 border border-zinc-800 text-zinc-300 hover:text-white">
+                    <i class="fa-solid fa-bars text-lg"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobileMenu" class="hidden md:hidden bg-zinc-900 border-b border-zinc-800 px-4 py-6 space-y-4">
+            <a href="#hizmetler" class="block text-zinc-300 hover:text-brand-500 font-medium">Hizmetler</a>
+            <a href="#cozumler" class="block text-zinc-300 hover:text-brand-500 font-medium">Çözümler</a>
+            <a href="#hakkimizda" class="block text-zinc-300 hover:text-brand-500 font-medium">Kurumsal</a>
+            <a href="#iletisim" class="block text-zinc-300 hover:text-brand-500 font-medium">İletişim</a>
+            <div class="pt-4 border-t border-zinc-800 flex flex-col gap-3">
+                <a href="tel:05352914748" class="flex items-center justify-center gap-2 w-full py-3 rounded-xl bg-brand-600 text-white font-semibold">
+                    <i class="fa-solid fa-phone-volume"></i> Eren Kara: 0535 291 47 48
+                </a>
+                <a href="tel:05453466469" class="flex items-center justify-center gap-2 w-full py-3 rounded-xl bg-zinc-800 text-white font-semibold">
+                    <i class="fa-solid fa-phone-volume"></i> Hüseyin Göy: 0545 346 64 69
+                </a>
+            </div>
         </div>
     </header>
 
-    <!-- Main Content -->
-    <main class="max-w-7xl mx-auto px-4 space-y-28 py-10">
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 md:pt-44 md:pb-32 hero-gradient overflow-hidden">
+        <div class="absolute inset-0 bg-[linear-gradient(to_right,#27272a10_1px,transparent_1px),linear-gradient(to_bottom,#27272a10_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-500/10 border border-brand-500/20 text-brand-400 text-xs font-semibold mb-8 animate-pulse">
+                <i class="fa-solid fa-shield-check"></i> Gaziantep Güvenilir Kamera ve Alarm Sistemleri
+            </div>
+            
+            <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold text-white tracking-tight max-w-4xl mx-auto leading-[1.1] mb-6">
+                Yaşam Alanlarınız İçin <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-500 to-red-400">Kesintisiz Güvenlik</span>
+            </h1>
+            
+            <p class="text-lg sm:text-xl text-zinc-400 max-w-2xl mx-auto mb-10 font-normal">
+                Eren Kara ve Hüseyin Göy ortaklığıyla Gaziantep genelinde konut, iş yeri, fabrika ve projeleriniz için profesyonel güvenlik çözümleri sunuyoruz.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="#iletisim" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-bold shadow-xl shadow-brand-600/30 transition-all hover:scale-105 flex items-center justify-center gap-3">
+                    <span>Ücretsiz Keşif Al</span>
+                    <i class="fa-solid fa-arrow-right text-sm"></i>
+                </a>
+                <a href="#hizmetler" class="w-full sm:w-auto px-8 py-4 rounded-xl glass-card hover:bg-zinc-800/80 text-white font-semibold transition-all flex items-center justify-center gap-3">
+                    <i class="fa-solid fa-grid-2 text-brand-500"></i>
+                    <span>Hizmetlerimiz</span>
+                </a>
+            </div>
 
-        <!-- Hero Section -->
-        <section id="anasayfa" class="relative text-center py-24 md:py-32 bg-gradient-to-b from-slate-900/90 via-slate-900/40 to-slate-950 rounded-3xl border border-slate-800 px-6 overflow-hidden shadow-2xl">
-            <div class="absolute inset-0 bg-[linear-gradient(to_right,#1e293b15_1px,transparent_1px),linear-gradient(to_bottom,#1e293b15_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_50%,#000_70%,transparent_100%)]"></div>
-            <div class="relative z-10 max-w-3xl mx-auto space-y-6">
-                <span class="inline-block bg-sky-500/10 border border-sky-500/20 text-sky-400 px-4 py-1.5 rounded-full text-xs font-semibold tracking-wide uppercase">Profesyonel Zayıf Akım ve Güvenlik Sistemleri</span>
-                <!-- BURASI ESKİ HALİNE GETİRİLDİ -->
-                <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight leading-tight">Güvenliğiniz İçin <span class="text-sky-400">Profesyonel Çözümler</span></h1>
-                <p class="text-slate-400 text-lg md:text-xl font-normal max-w-2xl mx-auto leading-relaxed">Kamera sistemleri, alarm, hırsız uyarı ve akıllı otomasyon altyapıları ile yaşam alanlarınızı ve ticari mülklerinizi 7/24 güvence altına alıyoruz.</p>
-                <div class="flex flex-col sm:flex-row justify-center gap-4 pt-4">
-                    <a href="#iletisim" class="bg-sky-500 hover:bg-sky-600 text-white font-semibold px-8 py-4 rounded-xl transition shadow-lg shadow-sky-500/25 flex items-center justify-center space-x-2">
-                        <span>Hemen İletişime Geç</span>
-                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
-                    </a>
-                    <a href="#projeler" class="bg-slate-900 hover:bg-slate-800 text-slate-200 font-semibold px-8 py-4 rounded-xl transition border border-slate-700/80 flex items-center justify-center">Projelerimizi İncele</a>
+            <!-- Stats Bar -->
+            <div class="mt-20 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto">
+                <div class="glass-card p-6 rounded-2xl text-center">
+                    <span class="block text-3xl font-extrabold text-white mb-1">%100</span>
+                    <span class="text-xs text-zinc-400 font-medium tracking-wide">Müşteri Memnuniyeti</span>
+                </div>
+                <div class="glass-card p-6 rounded-2xl text-center">
+                    <span class="block text-3xl font-extrabold text-white mb-1">7/24</span>
+                    <span class="text-xs text-zinc-400 font-medium tracking-wide">Teknik Destek & Servis</span>
+                </div>
+                <div class="glass-card p-6 rounded-2xl text-center">
+                    <span class="block text-3xl font-extrabold text-white mb-1">HD / 4K</span>
+                    <span class="text-xs text-zinc-400 font-medium tracking-wide">Yüksek Çözünürlük</span>
+                </div>
+                <div class="glass-card p-6 rounded-2xl text-center">
+                    <span class="block text-3xl font-extrabold text-white mb-1">Profesyonel</span>
+                    <span class="text-xs text-zinc-400 font-medium tracking-wide">Uzman Kadro</span>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- İstatistikler / Özet Şerit -->
-        <section class="grid grid-cols-2 md:grid-cols-4 gap-6">
-            <div class="bg-slate-900/60 border border-slate-800/80 p-6 rounded-2xl text-center space-y-1">
-                <div class="text-3xl md:text-4xl font-extrabold text-sky-400">%100</div>
-                <div class="text-sm text-slate-400 font-medium">Müşteri Memnuniyeti</div>
+    <!-- Services Section -->
+    <section id="hizmetler" class="py-24 bg-zinc-900/50 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-brand-500 font-semibold text-sm tracking-wider uppercase block mb-3">Neler Yapıyoruz?</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">Profesyonel Güvenlik Hizmetleri</h2>
+                <p class="text-zinc-400 mt-4 text-base">Güvenliğiniz için en son teknolojiye sahip sistemleri titizlikle kuruyor ve destek veriyoruz.</p>
             </div>
-            <div class="bg-slate-900/60 border border-slate-800/80 p-6 rounded-2xl text-center space-y-1">
-                <div class="text-3xl md:text-4xl font-extrabold text-sky-400">7/24</div>
-                <div class="text-sm text-slate-400 font-medium">Kesintisiz Destek</div>
-            </div>
-            <div class="bg-slate-900/60 border border-slate-800/80 p-6 rounded-2xl text-center space-y-1">
-                <div class="text-3xl md:text-4xl font-extrabold text-sky-400">Proje</div>
-                <div class="text-sm text-slate-400 font-medium">Özel Keşif ve Mühendislik</div>
-            </div>
-            <div class="bg-slate-900/60 border border-slate-800/80 p-6 rounded-2xl text-center space-y-1">
-                <div class="text-3xl md:text-4xl font-extrabold text-sky-400">1. Sınıf</div>
-                <div class="text-sm text-slate-400 font-medium">Donanım Kalitesi</div>
-            </div>
-        </section>
 
-        <!-- Projeler Section -->
-        <section id="projeler" class="space-y-10">
-            <div class="text-center max-w-xl mx-auto space-y-3">
-                <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight">Öne Çıkan Projelerimiz</h2>
-                <p class="text-slate-400">Farklı sektörler için hayata geçirdiğimiz anahtar teslim güvenlik ve otomasyon altyapıları.</p>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-6 hover:border-sky-500/50 transition duration-300 group">
-                    <div class="h-48 bg-gradient-to-br from-slate-800 to-slate-900 rounded-xl mb-5 flex items-center justify-center text-slate-500 font-semibold border border-slate-700/50 group-hover:border-sky-500/30 transition">
-                        <span class="text-sky-400 font-bold tracking-wider">İş Merkezleri & Plazalar</span>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="glass-card p-8 rounded-3xl hover:border-brand-500/50 transition-all group">
+                    <div class="w-14 h-14 rounded-2xl bg-brand-500/10 text-brand-500 flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-600 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-video"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-2 text-white">Kurumsal Kamera Altyapıları</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed">Çok katlı binalar, geniş sahalar ve plazalar için yüksek çözünürlüklü IP kamera ve NVR kayıt sistemleri.</p>
+                    <h3 class="text-xl font-bold text-white mb-3">Güvenlik Kamera Sistemleri</h3>
+                    <p class="text-zinc-400 text-sm leading-relaxed">Ev ve iş yerleriniz için gece görüşlü, yüksek çözünürlüklü IP ve Analog kamera sistemleri kurulumu.</p>
                 </div>
-                <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-6 hover:border-sky-500/50 transition duration-300 group">
-                    <div class="h-48 bg-gradient-to-br from-slate-800 to-slate-900 rounded-xl mb-5 flex items-center justify-center text-slate-500 font-semibold border border-slate-700/50 group-hover:border-sky-500/30 transition">
-                        <span class="text-sky-400 font-bold tracking-wider">Villa & Konut</span>
-                    </div>
-                    <h3 class="text-xl font-bold mb-2 text-white">Akıllı Alarm Sistemleri</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed">Müstakil konutlar ve siteler için kablosuz sensörler, dış alan çevre koruma ve mobil entegre alarm panelleri.</p>
-                </div>
-                <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-6 hover:border-sky-500/50 transition duration-300 group">
-                    <div class="h-48 bg-gradient-to-br from-slate-800 to-slate-900 rounded-xl mb-5 flex items-center justify-center text-slate-500 font-semibold border border-slate-700/50 group-hover:border-sky-500/30 transition">
-                        <span class="text-sky-400 font-bold tracking-wider">Fabrika & Depo</span>
-                    </div>
-                    <h3 class="text-xl font-bold mb-2 text-white">Geçiş Kontrol ve Turnike</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed">Yoğun personel giriş çıkışlarının denetlendiği, kartlı, biyometrik geçiş ve plaka tanıma sistemleri.</p>
-                </div>
-            </div>
-        </section>
 
-        <!-- Faaliyet Alanları Section -->
-        <section id="alanlar" class="space-y-10">
-            <div class="text-center max-w-xl mx-auto space-y-3">
-                <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight">Faaliyet Alanlarımız</h2>
-                <p class="text-slate-400">Uzmanlık kazandığımız teknolojik güvenlik branşları</p>
-            </div>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div class="bg-slate-900/50 border border-slate-800 p-6 rounded-2xl hover:bg-slate-900 transition">
-                    <div class="w-12 h-12 bg-sky-500/10 rounded-xl flex items-center justify-center text-sky-400 mb-4 font-bold text-lg">01</div>
-                    <h3 class="font-bold text-lg mb-2 text-white">Güvenlik Kameraları</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed">Gece görüşlü, yapay zeka tabanlı hareket algılamalı ve cepten uzaktan izlenebilir kamera sistemleri.</p>
+                <!-- Service 2 -->
+                <div class="glass-card p-8 rounded-3xl hover:border-brand-500/50 transition-all group">
+                    <div class="w-14 h-14 rounded-2xl bg-brand-500/10 text-brand-500 flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-600 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-bell"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Hırsız Alarm Sistemleri</h3>
+                    <p class="text-zinc-400 text-sm leading-relaxed">Olası hırsızlık ve izinsiz giriş durumlarına karşı anında uyarı veren akıllı alarm sistemleri.</p>
                 </div>
-                <div class="bg-slate-900/50 border border-slate-800 p-6 rounded-2xl hover:bg-slate-900 transition">
-                    <div class="w-12 h-12 bg-sky-500/10 rounded-xl flex items-center justify-center text-sky-400 mb-4 font-bold text-lg">02</div>
-                    <h3 class="font-bold text-lg mb-2 text-white">Alarm Sistemleri</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed">Hırsızlık, yangın, su baskını ve gaz kaçağına karşı erken uyarı sağlayan gelişmiş güvenlik panelleri.</p>
-                </div>
-                <div class="bg-slate-900/50 border border-slate-800 p-6 rounded-2xl hover:bg-slate-900 transition">
-                    <div class="w-12 h-12 bg-sky-500/10 rounded-xl flex items-center justify-center text-sky-400 mb-4 font-bold text-lg">03</div>
-                    <h3 class="font-bold text-lg mb-2 text-white">Geçiş Kontrolleri</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed">Kartlı, şifreli ve parmak izli geçiş üniteleriyle binanızın güvenliğini kontrol altında tutun.</p>
-                </div>
-                <div class="bg-slate-900/50 border border-slate-800 p-6 rounded-2xl hover:bg-slate-900 transition">
-                    <div class="w-12 h-12 bg-sky-500/10 rounded-xl flex items-center justify-center text-sky-400 mb-4 font-bold text-lg">04</div>
-                    <h3 class="font-bold text-lg mb-2 text-white">Akıllı Otomasyon</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed">Ev ve iş yerinizdeki elektronik sistemlerin konfor ve güvenlik odaklı akıllı telefon entegrasyonu.</p>
-                </div>
-            </div>
-        </section>
 
-        <!-- Yönetim Section -->
-        <section id="yonetim" class="space-y-10">
-            <div class="text-center max-w-xl mx-auto space-y-3">
-                <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight">Yönetim ve Kadro</h2>
-                <p class="text-slate-400">Güvenliğiniz için tecrübeli ekibimizle sahadayız</p>
+                <!-- Service 3 -->
+                <div class="glass-card p-8 rounded-3xl hover:border-brand-500/50 transition-all group">
+                    <div class="w-14 h-14 rounded-2xl bg-brand-500/10 text-brand-500 flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-600 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-fire-detector"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Yangın Algılama Sistemleri</h3>
+                    <p class="text-zinc-400 text-sm leading-relaxed">Erken uyarı özellikleri ile olası yangın tehlikelerini önceden tespit eden hassas algılama çözümleri.</p>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="glass-card p-8 rounded-3xl hover:border-brand-500/50 transition-all group">
+                    <div class="w-14 h-14 rounded-2xl bg-brand-500/10 text-brand-500 flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-600 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-wifi"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">WiFi Kamera Sistemleri</h3>
+                    <p class="text-zinc-400 text-sm leading-relaxed">Kablo karmaşasından uzak, kablosuz ağ üzerinden kolayca yönetilebilen pratik güvenlik kameraları.</p>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="glass-card p-8 rounded-3xl hover:border-brand-500/50 transition-all group">
+                    <div class="w-14 h-14 rounded-2xl bg-brand-500/10 text-brand-500 flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-600 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-volume-high"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Ses Sistemleri</h3>
+                    <p class="text-zinc-400 text-sm leading-relaxed">İş yerleri, okullar ve sosyal alanlar için profesyonel anons ve müzik seslendirme sistemleri.</p>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="glass-card p-8 rounded-3xl hover:border-brand-500/50 transition-all group">
+                    <div class="w-14 h-14 rounded-2xl bg-brand-500/10 text-brand-500 flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-600 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-screwdriver-wrench"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Bakım & Teknik Servis</h3>
+                    <p class="text-zinc-400 text-sm leading-relaxed">Mevcut sistemlerinizin arıza tespiti, periyodik bakımı ve revizyon işlemlerinde kesintisiz destek.</p>
+                </div>
             </div>
-            <div class="max-w-md mx-auto bg-slate-900 border border-slate-800 p-8 rounded-3xl text-center shadow-xl relative overflow-hidden">
-                <div class="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-sky-400 to-blue-600"></div>
+        </div>
+    </section>
+
+    <!-- Solutions / Application Areas -->
+    <section id="cozumler" class="py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-brand-500 font-semibold text-sm tracking-wider uppercase block mb-3">Uygulama Alanları</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">Hangi Alanlara Hizmet Veriyoruz?</h2>
+                <p class="text-zinc-400 mt-4 text-base">İhtiyacınıza uygun ölçeklenebilir güvenlik mimarileri sunuyoruz.</p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+                <div class="glass-card p-6 rounded-2xl text-center hover:bg-zinc-800/50 transition-all">
+                    <i class="fa-solid fa-house text-3xl text-brand-500 mb-3"></i>
+                    <h4 class="font-semibold text-sm text-white">Konut / Ev</h4>
+                </div>
+                <div class="glass-card p-6 rounded-2xl text-center hover:bg-zinc-800/50 transition-all">
+                    <i class="fa-solid fa-store text-3xl text-brand-500 mb-3"></i>
+                    <h4 class="font-semibold text-sm text-white">Mağaza</h4>
+                </div>
+                <div class="glass-card p-6 rounded-2xl text-center hover:bg-zinc-800/50 transition-all">
+                    <i class="fa-solid fa-building text-3xl text-brand-500 mb-3"></i>
+                    <h4 class="font-semibold text-sm text-white">İş Yeri</h4>
+                </div>
+                <div class="glass-card p-6 rounded-2xl text-center hover:bg-zinc-800/50 transition-all">
+                    <i class="fa-solid fa-industry text-3xl text-brand-500 mb-3"></i>
+                    <h4 class="font-semibold text-sm text-white">Fabrika</h4>
+                </div>
+                <div class="glass-card p-6 rounded-2xl text-center hover:bg-zinc-800/50 transition-all">
+                    <i class="fa-solid fa-graduation-cap text-3xl text-brand-500 mb-3"></i>
+                    <h4 class="font-semibold text-sm text-white">Okul</h4>
+                </div>
+                <div class="glass-card p-6 rounded-2xl text-center hover:bg-zinc-800/50 transition-all">
+                    <i class="fa-solid fa-hotel text-3xl text-brand-500 mb-3"></i>
+                    <h4 class="font-semibold text-sm text-white">Villa</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="hakkimizda" class="py-24 bg-zinc-900/50 border-t border-zinc-800/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <span class="text-brand-500 font-semibold text-sm tracking-wider uppercase block mb-3">Kurumsal</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-6">Güvenliğinizi Şansa Bırakmayın</h2>
+                    <p class="text-zinc-400 text-base leading-relaxed mb-6">
+                        EHG Güvenlik olarak Gaziantep / Şahinbey merkezli faaliyet gösteriyor; evinizden fabrikanıza kadar her noktada huzurla yaşamanız için en kaliteli güvenlik altyapısını kuruyoruz.
+                    </p>
+                    <p class="text-zinc-400 text-base leading-relaxed mb-8">
+                        Deneyimli ekibimiz Eren Kara ve Hüseyin Göy öncülüğünde, keşif aşamasından satış sonrası teknik desteğe kadar her adımda yanınızdayız.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="flex items-center gap-3">
+                            <i class="fa-solid fa-circle-check text-brand-500 text-lg"></i>
+                            <span class="text-sm font-semibold text-zinc-200">Garantili Ürünler</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i class="fa-solid fa-circle-check text-brand-500 text-lg"></i>
+                            <span class="text-sm font-semibold text-zinc-200">Hızlı Montaj</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i class="fa-solid fa-circle-check text-brand-500 text-lg"></i>
+                            <span class="text-sm font-semibold text-zinc-200">7/24 Ulaşılabilirlik</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i class="fa-solid fa-circle-check text-brand-500 text-lg"></i>
+                            <span class="text-sm font-semibold text-zinc-200">Ücretsiz Keşif</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="glass-card p-8 sm:p-10 rounded-3xl border border-zinc-800 relative z-10">
+                        <h3 class="text-2xl font-bold text-white mb-6">İletişim Ortaklarımız</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-center gap-4 p-4 rounded-2xl bg-zinc-900 border border-zinc-800">
+                                <div class="w-12 h-12 rounded-xl bg-brand-500/10 text-brand-500 flex items-center justify-center font-bold text-lg">
+                                    EK
+                                </div>
+                                <div>
+                                    <h4 class="text-white font-bold">Eren Kara</h4>
+                                    <a href="tel:05352914748" class="text-brand-400 text-sm font-semibold hover:underline">0535 291 47 48</a>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-4 p-4 rounded-2xl bg-zinc-900 border border-zinc-800">
+                                <div class="w-12 h-12 rounded-xl bg-brand-500/10 text-brand-500 flex items-center justify-center font-bold text-lg">
+                                    HG
+                                </div>
+                                <div>
+                                    <h4 class="text-white font-bold">Hüseyin Göy</h4>
+                                    <a href="tel:05453466469" class="text-brand-400 text-sm font-semibold hover:underline">0545 346 64 69</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Decorative blur -->
+                    <div class="absolute -top-10 -right-10 w-72 h-72 bg-brand-600/20 rounded-full blur-3xl pointer-events-none"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / CTA Section -->
+    <section id="iletisim" class="py-24 relative overflow-hidden">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="glass-card p-8 sm:p-12 rounded-3xl border border-zinc-800 text-center">
+                <span class="text-brand-500 font-semibold text-sm tracking-wider uppercase block mb-3">Bizimle İletişime Geçin</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-4">Güvenliğiniz İçin Hemen Arayın</h2>
+                <p class="text-zinc-400 max-w-xl mx-auto mb-10">Şahinbey ve tüm Gaziantep bölgesinde keşif veya teknik destek talepleriniz için ortaklarımıza doğrudan ulaşabilirsiniz.</p>
                 
-                <div class="w-28 h-28 mx-auto mb-5 rounded-full p-1 bg-gradient-to-tr from-sky-500 to-blue-600 shadow-lg shadow-sky-500/20">
-                    <img src="eren.jpg" alt="Eren Kara" class="w-full h-full object-cover rounded-full bg-slate-800" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                    <div class="w-full h-full bg-slate-900 rounded-full items-center justify-center text-sky-400 text-2xl font-black" style="display: none;">E.K</div>
-                </div>
-
-                <h3 class="text-2xl font-bold text-white mb-1">Eren Kara</h3>
-                <p class="text-sky-400 text-sm font-semibold mb-4">Kurucu & Teknik Yönetici</p>
-                <p class="text-slate-400 text-sm leading-relaxed">Zayıf akım, elektronik güvenlik sistemleri ve entegre proje yönetimi alanında uzmanlaşmış profesyonel yaklaşım.</p>
-            </div>
-        </section>
-
-        <!-- Neden Biz Section -->
-        <section id="neden-biz" class="bg-gradient-to-r from-slate-900/60 to-slate-900/20 border border-slate-800 rounded-3xl p-8 md:p-14">
-            <div class="max-w-3xl mx-auto text-center space-y-6">
-                <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight">Neden Bizi Tercih Etmelisiniz?</h2>
-                <p class="text-slate-400 leading-relaxed text-base md:text-lg">
-                    Sektördeki en son yenilikleri ve teknolojileri yakından takip ediyor; ücretsiz keşif aşamasından montaj sonrası teknik servise kadar tüm süreçlerde koşulsuz müşteri memnuniyeti ilkesiyle çalışıyoruz. Dayanıklı malzeme, kusursuz işçilik ve kesintisiz destek garantisi sunuyoruz.
-                </p>
-            </div>
-        </section>
-
-        <!-- İletişim / Form Section -->
-        <section id="iletisim" class="grid grid-cols-1 md:grid-cols-2 gap-12 bg-slate-900/50 border border-slate-800 p-8 md:p-12 rounded-3xl shadow-xl">
-            <div class="space-y-6">
-                <div>
-                    <span class="text-sky-400 font-semibold text-sm tracking-wider uppercase">Bize Ulaşın</span>
-                    <h2 class="text-3xl font-extrabold tracking-tight mt-1 mb-3">İletişim Bilgileri</h2>
-                    <p class="text-slate-400 leading-relaxed">Projeleriniz, keşif talepleriniz ve güvenlik ihtiyaçlarınız için formu doldurarak doğrudan WhatsApp üzerinden anında bizimle görüşebilirsiniz.</p>
-                </div>
-                <div class="space-y-4 text-slate-300 pt-2">
-                    <div class="flex items-center space-x-3 bg-slate-950/60 p-4 rounded-xl border border-slate-800/80">
-                        <span class="text-xl">📍</span>
-                        <div>
-                            <div class="text-xs text-slate-500 font-semibold">Ofis Adresi</div>
-                            <div class="text-sm font-medium text-slate-200">Şahinbey / Gaziantep</div>
-                        </div>
-                    </div>
-                    <div class="flex items-center space-x-3 bg-slate-950/60 p-4 rounded-xl border border-slate-800/80">
-                        <span class="text-xl">✉️</span>
-                        <div>
-                            <div class="text-xs text-slate-500 font-semibold">E-Posta Adresi</div>
-                            <div class="text-sm font-medium text-slate-200">ehgguvenliksistemleri@gmail.com</div>
-                        </div>
-                    </div>
-                    <div class="flex items-center space-x-3 bg-slate-950/60 p-4 rounded-xl border border-slate-800/80">
-                        <span class="text-xl">📞</span>
-                        <div>
-                            <div class="text-xs text-slate-500 font-semibold">WhatsApp / Telefon</div>
-                            <div class="text-sm font-medium text-slate-200">0535 291 47 48</div>
-                        </div>
-                    </div>
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-6">
+                    <a href="tel:05352914748" class="w-full sm:w-auto px-8 py-4 rounded-2xl bg-brand-600 hover:bg-brand-700 text-white font-bold shadow-xl shadow-brand-600/30 transition-all flex items-center justify-center gap-3">
+                        <i class="fa-solid fa-phone-volume"></i>
+                        <span>Eren Kara: 0535 291 47 48</span>
+                    </a>
+                    <a href="tel:05453466469" class="w-full sm:w-auto px-8 py-4 rounded-2xl bg-zinc-800 hover:bg-zinc-700 text-white font-bold transition-all flex items-center justify-center gap-3">
+                        <i class="fa-solid fa-phone-volume"></i>
+                        <span>Hüseyin Göy: 0545 346 64 69</span>
+                    </a>
                 </div>
             </div>
-
-            <!-- Hızlı Teklif / Mesaj Formu -->
-            <div class="bg-slate-900 p-8 rounded-2xl border border-slate-800 shadow-2xl flex flex-col justify-between">
-                <div>
-                    <h3 class="text-xl font-bold mb-1 text-white">Hızlı Teklif / Mesaj Formu</h3>
-                    <p class="text-xs text-slate-400 mb-6">Bilgilerinizi girin, mesajınız doğrudan WhatsApp'a iletilsin.</p>
-                </div>
-                <form id="whatsappForm" onsubmit="sendToWhatsApp(event)" class="space-y-4">
-                    <div>
-                        <label class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-1.5">Adınız Soyadınız</label>
-                        <input type="text" id="name" required placeholder="Adınızı giriniz" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-slate-100 placeholder-slate-600 focus:outline-none focus:border-sky-500 transition text-sm">
-                    </div>
-                    <div>
-                        <label class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-1.5">Telefon Numaranız</label>
-                        <input type="tel" id="phone" required placeholder="05XX XXX XX XX" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-slate-100 placeholder-slate-600 focus:outline-none focus:border-sky-500 transition text-sm">
-                    </div>
-                    <div>
-                        <label class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-1.5">İlgilendiğiniz Sistem</label>
-                        <select id="service" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-slate-100 focus:outline-none focus:border-sky-500 transition text-sm">
-                            <option>Güvenlik Kamera Sistemleri</option>
-                            <option>Alarm ve Hırsız Uyarı Sistemleri</option>
-                            <option>Geçiş Kontrol ve Turnike</option>
-                            <option>Akıllı Ev Otomasyonu</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-1.5">Mesajınız / Detaylar</label>
-                        <textarea id="message" rows="3" required placeholder="Projeniz hakkında detay yazın..." class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-slate-100 placeholder-slate-600 focus:outline-none focus:border-sky-500 transition text-sm"></textarea>
-                    </div>
-                    <button type="submit" class="w-full bg-sky-500 hover:bg-sky-600 font-bold py-3.5 rounded-xl transition text-white shadow-lg shadow-sky-500/20 text-sm flex items-center justify-center space-x-2">
-                        <span>WhatsApp ile Gönder</span>
-                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.124-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
-                    </button>
-                </form>
-            </div>
-        </section>
-
-    </main>
+        </div>
+    </section>
 
     <!-- Footer -->
-    <footer class="border-t border-slate-800/80 mt-28 py-10 bg-slate-900/40 text-center text-sm text-slate-500 space-y-3">
-        <div class="text-lg font-bold text-slate-300">E.H.G. GÜVENLİK SİSTEMLERİ</div>
-        <p>&copy; 2026 Tüm hakları saklıdır. Gaziantep / Şahinbey</p>
+    <footer class="bg-zinc-950 border-t border-zinc-900 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
+            <div class="flex items-center gap-3">
+                <div class="w-9 h-9 rounded-lg bg-gradient-to-tr from-brand-700 to-brand-500 flex items-center justify-center text-white">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <span class="text-lg font-extrabold text-white">EHG<span class="text-brand-500">GÜVENLİK</span></span>
+            </div>
+            
+            <p class="text-zinc-500 text-sm">
+                &copy; 2026 EHG Güvenlik Kamera Sistemleri. Tüm hakları saklıdır. Gaziantep / Şahinbey
+            </p>
+
+            <div class="flex items-center gap-4 text-zinc-400">
+                <a href="#hizmetler" class="hover:text-brand-500 transition-colors text-sm">Hizmetler</a>
+                <a href="#hakkimizda" class="hover:text-brand-500 transition-colors text-sm">Kurumsal</a>
+                <a href="#iletisim" class="hover:text-brand-500 transition-colors text-sm">İletişim</a>
+            </div>
+        </div>
     </footer>
 
-    <!-- WhatsApp Entegrasyon Scripti -->
+    <!-- JavaScript for Mobile Menu Toggle -->
     <script>
-        function sendToWhatsApp(event) {
-            event.preventDefault();
-            
-            const name = document.getElementById('name').value;
-            const phone = document.getElementById('phone').value;
-            const service = document.getElementById('service').value;
-            const message = document.getElementById('message').value;
+        const menuBtn = document.getElementById('menuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
 
-            const phoneNumber = "905352914748";
-
-            const text = `*Yeni Web Sitesi Mesajı*%0A%0A*Ad Soyad:* ${encodeURIComponent(name)}%0A*Telefon:* ${encodeURIComponent(phone)}%0A*İlgilenilen Sistem:* ${encodeURIComponent(service)}%0A*Mesaj:* ${encodeURIComponent(message)}`;
-
-            window.open(`https://wa.me/${phoneNumber}?text=${text}`, '_blank');
-        }
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
     </script>
 </body>
 </html>
