@@ -146,7 +146,7 @@
             </div>
         </section>
 
-        <!-- Yönetim Section -->
+        <!-- Yönetim Section (Eren Kara Fotoğraflı Alan) -->
         <section id="yonetim" class="space-y-10">
             <div class="text-center max-w-xl mx-auto space-y-3">
                 <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight">Yönetim ve Kadro</h2>
@@ -154,7 +154,14 @@
             </div>
             <div class="max-w-md mx-auto bg-slate-900 border border-slate-800 p-8 rounded-3xl text-center shadow-xl relative overflow-hidden">
                 <div class="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-sky-400 to-blue-600"></div>
-                <div class="w-24 h-24 bg-gradient-to-tr from-sky-500/20 to-slate-800 border border-sky-500/30 rounded-full mx-auto mb-5 flex items-center justify-center text-sky-400 text-2xl font-black">E.K</div>
+                
+                <!-- BURAYA FOTOĞRAF EKLENDİ: src kısmına kendi resim dosyanın adını (örn: eren.jpg) yazabilirsin -->
+                <div class="w-28 h-28 mx-auto mb-5 rounded-full p-1 bg-gradient-to-tr from-sky-500 to-blue-600 shadow-lg shadow-sky-500/20">
+                    <img src="eren.jpg" alt="Eren Kara" class="w-full h-full object-cover rounded-full bg-slate-800" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <!-- Eğer fotoğraf henüz yüklenmediyse veya bulunamadıysa yedek harf gösterimi -->
+                    <div class="w-full h-full bg-slate-900 rounded-full items-center justify-center text-sky-400 text-2xl font-black" style="display: none;">E.K</div>
+                </div>
+
                 <h3 class="text-2xl font-bold text-white mb-1">Eren Kara</h3>
                 <p class="text-sky-400 text-sm font-semibold mb-4">Kurucu & Teknik Yönetici</p>
                 <p class="text-slate-400 text-sm leading-relaxed">Zayıf akım, elektronik güvenlik sistemleri ve entegre proje yönetimi alanında uzmanlaşmış profesyonel yaklaşım.</p>
@@ -255,10 +262,9 @@
             
             const name = document.getElementById('name').value;
             const phone = document.getElementById('phone').value;
-            const service = document.getElementById('service').value;
+            const service = document.getElementById('service'].value;
             const message = document.getElementById('message').value;
 
-            // Eren Kara'nın numarası
             const phoneNumber = "905352914748";
 
             const text = `*Yeni Web Sitesi Mesajı*%0A%0A*Ad Soyad:* ${encodeURIComponent(name)}%0A*Telefon:* ${encodeURIComponent(phone)}%0A*İlgilenilen Sistem:* ${encodeURIComponent(service)}%0A*Mesaj:* ${encodeURIComponent(message)}`;
