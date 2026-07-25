@@ -53,7 +53,8 @@
             <div class="absolute inset-0 bg-[linear-gradient(to_right,#1e293b15_1px,transparent_1px),linear-gradient(to_bottom,#1e293b15_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_50%,#000_70%,transparent_100%)]"></div>
             <div class="relative z-10 max-w-3xl mx-auto space-y-6">
                 <span class="inline-block bg-sky-500/10 border border-sky-500/20 text-sky-400 px-4 py-1.5 rounded-full text-xs font-semibold tracking-wide uppercase">Profesyonel Zayıf Akım ve Güvenlik Sistemleri</span>
-                <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight leading-tight">Güvenliğiniz İçin <span class="text-sky-400">Tavizsiz Çözümler</span></h1>
+                <!-- BURASI ESKİ HALİNE GETİRİLDİ -->
+                <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight leading-tight">Güvenliğiniz İçin <span class="text-sky-400">Profesyonel Çözümler</span></h1>
                 <p class="text-slate-400 text-lg md:text-xl font-normal max-w-2xl mx-auto leading-relaxed">Kamera sistemleri, alarm, hırsız uyarı ve akıllı otomasyon altyapıları ile yaşam alanlarınızı ve ticari mülklerinizi 7/24 güvence altına alıyoruz.</p>
                 <div class="flex flex-col sm:flex-row justify-center gap-4 pt-4">
                     <a href="#iletisim" class="bg-sky-500 hover:bg-sky-600 text-white font-semibold px-8 py-4 rounded-xl transition shadow-lg shadow-sky-500/25 flex items-center justify-center space-x-2">
@@ -146,7 +147,7 @@
             </div>
         </section>
 
-        <!-- Yönetim Section (Eren Kara Fotoğraflı Alan) -->
+        <!-- Yönetim Section -->
         <section id="yonetim" class="space-y-10">
             <div class="text-center max-w-xl mx-auto space-y-3">
                 <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight">Yönetim ve Kadro</h2>
@@ -155,10 +156,8 @@
             <div class="max-w-md mx-auto bg-slate-900 border border-slate-800 p-8 rounded-3xl text-center shadow-xl relative overflow-hidden">
                 <div class="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-sky-400 to-blue-600"></div>
                 
-                <!-- BURAYA FOTOĞRAF EKLENDİ: src kısmına kendi resim dosyanın adını (örn: eren.jpg) yazabilirsin -->
                 <div class="w-28 h-28 mx-auto mb-5 rounded-full p-1 bg-gradient-to-tr from-sky-500 to-blue-600 shadow-lg shadow-sky-500/20">
                     <img src="eren.jpg" alt="Eren Kara" class="w-full h-full object-cover rounded-full bg-slate-800" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                    <!-- Eğer fotoğraf henüz yüklenmediyse veya bulunamadıysa yedek harf gösterimi -->
                     <div class="w-full h-full bg-slate-900 rounded-full items-center justify-center text-sky-400 text-2xl font-black" style="display: none;">E.K</div>
                 </div>
 
@@ -262,7 +261,7 @@
             
             const name = document.getElementById('name').value;
             const phone = document.getElementById('phone').value;
-            const service = document.getElementById('service'].value;
+            const service = document.getElementById('service').value;
             const message = document.getElementById('message').value;
 
             const phoneNumber = "905352914748";
